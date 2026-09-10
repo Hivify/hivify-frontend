@@ -61,29 +61,19 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className=" bg-white">
       <div className="container mx-auto px-4">
-       
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-gray-900">
-            Prislista
-          </h2>
-          <p className="text-xl text-gray-600 mt-4">
-            Hitta prispaketet som passar din communitys behov
-          </p>
-        </div>
-
       
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:items-stretch">
+
+        <div className="flex flex-col md:flex-row items-center md:items-end justify-around gap-6 py-10 hover:shadow-2xs">
           {plans.map((plan) => {
-            
             let sizeClasses = "";
             if (plan.size === "small") {
-              sizeClasses = "md:w-1/4 max-w-sm";
+              sizeClasses = "md:w-1/3 max-w-sm max-h-[600px]";
             } else if (plan.size === "medium") {
-              sizeClasses = "md:w-1/3 max-w-md scale-105 z-10";
+              sizeClasses = "md:w-1/3 max-w-sm max-h-[700px]";
             } else {
-              sizeClasses = "md:w-[35%] max-w-lg";
+              sizeClasses = "md:w-1/3 max-w-sm max-h-[800px]";
             }
 
             return (
@@ -98,7 +88,6 @@ export default function Pricing() {
                   ${plan.popular ? "ring-4 ring-amber-400 shadow-2xl" : "shadow-xl"}
                 `}
               >
-            
                 {plan.popular && (
                   <div className="flex justify-between items-start mb-2">
                     <div />
@@ -108,7 +97,6 @@ export default function Pricing() {
                   </div>
                 )}
 
-             
                 <div className="mb-2">
                   <h3 className="text-2xl font-bold">{plan.name}</h3>
                   <div className="flex items-baseline gap-1 mt-2">
@@ -119,13 +107,11 @@ export default function Pricing() {
                   </div>
                 </div>
 
-               
                 <p className="text-gray-400 text-sm mt-2">{plan.description}</p>
                 <p className="text-amber-400 font-semibold text-sm mt-1">
                   {plan.members}
                 </p>
 
-              
                 <ul className="mt-6 space-y-2 text-gray-300 text-sm grow">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
@@ -151,7 +137,6 @@ export default function Pricing() {
                   {plan.buttonText}
                 </button>
 
-         
                 <p className="text-gray-500 text-xs text-center mt-3">
                   Ingen bindningstid • Avsluta när du vill
                 </p>

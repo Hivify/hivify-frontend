@@ -1,8 +1,6 @@
-// src/components/landing/Header.tsx
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import HexagonOrb from "./HexagonOrb";
 
 export default function Header() {
@@ -32,9 +30,7 @@ export default function Header() {
             <div className="relative w-10 h-10">
               <HexagonOrb />
             </div>
-            <span className="text-xl font-bold text-gray-900">
-              Hivefy
-            </span>
+            <span className="text-xl font-bold text-gray-900">Hivefy</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

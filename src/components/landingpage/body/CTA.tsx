@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <section className="relative py-24 overflow-hidden bg-linear-to-br from-amber-50 via-white to-amber-100/70">
+    <section className="relative py-24 h-full overflow-hidden bg-linear-to-br from-amber-50 via-white to-amber-100/70">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-amber-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-amber-300/5 rounded-full blur-3xl" />
@@ -11,11 +11,6 @@ export default function CTA() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="badge-gold inline-flex mb-6">
-            <span className="inline-block w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
-            Redo att börja?
-          </div>
-
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-gray-900">
             Starta din community{" "}
             <span className="text-gold-gradient">idag</span>

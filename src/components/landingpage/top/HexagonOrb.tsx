@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 export default function HexagonOrb() {
   const [rotation, setRotation] = useState(0);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number>(0);
   const orbRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
