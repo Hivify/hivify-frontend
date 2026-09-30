@@ -63,8 +63,6 @@ export default function Pricing() {
   return (
     <section className=" bg-white">
       <div className="container mx-auto px-4">
-      
-
         <div className="flex flex-col md:flex-row items-center md:items-end justify-around gap-6 py-10 hover:shadow-2xs">
           {plans.map((plan) => {
             let sizeClasses = "";
@@ -82,7 +80,7 @@ export default function Pricing() {
                 className={`
                   ${sizeClasses}
                   w-full
-                  bg-black text-white rounded-2xl p-8
+                  bg-transparent text-gray-900 rounded-2xl p-8
                   flex flex-col
                   transition-all duration-300 hover:scale-105 hover:shadow-2xl
                   ${plan.popular ? "ring-4 ring-amber-400 shadow-2xl" : "shadow-xl"}
@@ -103,16 +101,16 @@ export default function Pricing() {
                     <span className="text-5xl font-extrabold">
                       {plan.price}
                     </span>
-                    <span className="text-gray-400">{plan.period}</span>
+                    <span className="text-gray-800">{plan.period}</span>
                   </div>
                 </div>
 
-                <p className="text-gray-400 text-sm mt-2">{plan.description}</p>
+                <p className="text-gray-800 text-sm mt-2">{plan.description}</p>
                 <p className="text-amber-400 font-semibold text-sm mt-1">
                   {plan.members}
                 </p>
 
-                <ul className="mt-6 space-y-2 text-gray-300 text-sm grow">
+                <ul className="mt-6 space-y-2 text-gray-800 text-sm grow">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-amber-400 mr-2">
@@ -137,7 +135,7 @@ export default function Pricing() {
                   {plan.buttonText}
                 </button>
 
-                <p className="text-gray-500 text-xs text-center mt-3">
+                <p className="text-gray-800 text-xs text-center mt-3">
                   Ingen bindningstid • Avsluta när du vill
                 </p>
               </div>
