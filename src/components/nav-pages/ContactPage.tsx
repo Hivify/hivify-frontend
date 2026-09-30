@@ -67,7 +67,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 hover:shadow-lg transition-shadow p-4 rounded-xl ">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
                   📧
                 </div>
                 <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
 
               {/* Telefon */}
               <div className="flex items-start gap-4 hover:shadow-lg transition-shadow p-4 rounded-xl ">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
                   📞
                 </div>
                 <div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
 
               {/* Adress */}
               <div className="flex items-start gap-4 hover:shadow-lg transition-shadow p-4 rounded-xl">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
                   📍
                 </div>
                 <div>
@@ -307,7 +307,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-b from-white to-amber-50/30">
+      <section className="py-20 bg-linear-to-b from-white to-amber-50/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -346,7 +346,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-gray-900 pr-4">
                       {item.q}
                     </h3>
-                    <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 text-xl transition-transform duration-300 group-open:rotate-45">
+                    <span className="shrink-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 text-xl transition-transform duration-300 group-open:rotate-45">
                       +
                     </span>
                   </summary>
@@ -360,9 +360,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-amber-50 via-white to-amber-100/70">
+      <section className="relative py-24 overflow-hidden bg-linear-to-br from-amber-50 via-white to-amber-100/70">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-400/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-amber-400/10 rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -379,7 +379,7 @@ export default function ContactPage() {
                 href="/register"
                 className="btn btn-primary group relative overflow-hidden text-lg px-10 py-4"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <span className="absolute inset-0 bg-linear-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="relative flex items-center">
                   Kom igång gratis
                   <svg
