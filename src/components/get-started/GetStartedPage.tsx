@@ -9,8 +9,8 @@ export default function GetStartedPage() {
   return (
     <div className="min-h-screen bg-white overflow-hidden">
       <GetStartedHero />
-      <GetStartedWhy />
       <GetStartedSteps />
+      <GetStartedWhy />
       <GetStartedCTA />
     </div>
   );

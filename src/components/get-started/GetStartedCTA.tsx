@@ -30,7 +30,7 @@ export default function GetStartedCTA() {
             >
               <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center">
-                Skapa konto gratis
+                Starta din community gratis
                 <svg
                   className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
                   fill="none"
