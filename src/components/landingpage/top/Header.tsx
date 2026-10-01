@@ -55,7 +55,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/register"
+              href="/get-started"
               className="hidden md:inline-block btn btn-primary text-sm px-5 py-2.5"
             >
               Kom igång gratis
