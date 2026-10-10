@@ -9,10 +9,6 @@ export default function RegisterForm() {
     <div className="bg-white rounded-3xl p-8 md:p-10 border border-gray-200/50 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)]">
       {/* Rubrik */}
       <div className="text-center mb-8">
-        <div className="badge-gold inline-flex mb-4">
-          <span className="inline-block w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
-          Starta din community
-        </div>
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
           Skapa ditt konto
         </h1>
@@ -59,30 +55,29 @@ export default function RegisterForm() {
         </div>
 
         {/* Lösenord */}
-        
-          <div className="grid grid-cols-1 md:grid-rows-1 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Lösenord *
-              </label>
-              <input
-                type="password"
-                placeholder="Minst 8 tecken"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Upprepa lösenord *
-              </label>
-              <input
-                type="password"
-                placeholder="Upprepa lösenordet"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
-              />
-            </div>
+
+        <div className="grid grid-cols-1 md:grid-rows-1 gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Lösenord *
+            </label>
+            <input
+              type="password"
+              placeholder="Minst 8 tecken"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+            />
           </div>
-      
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Upprepa lösenord *
+            </label>
+            <input
+              type="password"
+              placeholder="Upprepa lösenordet"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+            />
+          </div>
+        </div>
 
         {/* Separator */}
         <div className="border-t border-gray-100 pt-5">
