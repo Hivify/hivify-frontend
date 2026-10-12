@@ -13,9 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hivefy - Engagera din community",
+  title: "Hivefy - Bygg din community",
   description:
-    "Hivefy gör det enkelt för föreningar att samla och dela information.",
+    "Plattformen för föreningar som vill samla och strukturera all information på ett ställe. Skapa din community på 5 minuter – utan tekniskt krångel.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Hivefy",
+  },
+  icons: {
+    icon: "/icons/favicon.ico",
+    apple: "/icons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
