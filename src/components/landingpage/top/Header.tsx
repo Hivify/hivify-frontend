@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import HexagonOrb from "./HexagonOrb";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +17,7 @@ export default function Header() {
       <div className="bg-black py-2.5 text-center">
         <div className="container mx-auto px-4">
           <p className="text-white/90 text-sm font-medium">
-            🐝 Surra igång din community med Hivefy –{" "}
+            🐝 Surra igång din community med Hivify –{" "}
             <span className="text-amber-400 font-bold">gratis i 30 dagar!</span>
           </p>
         </div>
@@ -28,9 +27,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <div className="relative w-10 h-10">
-              <HexagonOrb />
+              <img
+                src="/icons/web-app-manifest-192x192.png"
+                alt="Hivify Logo"
+                className="w-full h-full rounded-full object-contain"
+              />
             </div>
-            <span className="text-xl font-bold text-gray-900">Hivefy</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

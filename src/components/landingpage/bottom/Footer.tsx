@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <div className="flex items-center gap-4 mb-4">
               <div>
-                <span className="text-2xl font-bold text-white">Hivefy</span>
+                <span className="text-2xl font-bold text-white">Hivify</span>
                 <p className="text-sm text-white/50 max-w-xs">
                   Bygg din community på 5 minuter.
                 </p>
@@ -86,15 +86,15 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="mailto:hello@hivefy.com"
+                    href="mailto:hello@hivify.com"
                     className="hover:text-white transition-colors"
                   >
-                    hello@hivefy.com
+                    hello@hivify.com
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/hivefy"
+                    href="https://twitter.com/hivify"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
@@ -104,7 +104,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/company/hivefy"
+                    href="https://linkedin.com/company/hivify"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
@@ -122,7 +122,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/40">
-          <p>© {currentYear} Hivefy. Alla rättigheter förbehållna.</p>
+          <p>© {currentYear} Hivify. Alla rättigheter förbehållna.</p>
           <div className="flex gap-6 justify-center md:justify-start items-center">
             <Link
               href="/privacy"

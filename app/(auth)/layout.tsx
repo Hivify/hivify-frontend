@@ -1,4 +1,3 @@
-// app/(auth)/layout.tsx
 import Link from "next/link";
 import HexagonOrb from "@/src/components/landingpage/top/HexagonOrb";
 
@@ -8,7 +7,7 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-amber-100 flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-amber-50 via-white to-amber-100 flex flex-col">
       {/* Enkel header – bara logotyp */}
       <header className="p-6">
         <Link href="/" className="flex items-center gap-2 w-fit">
