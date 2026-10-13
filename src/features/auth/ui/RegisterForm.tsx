@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function RegisterForm() {
-  const [subdomain, setSubdomain] = useState("ansjons-brf");
+  // const [subdomain, setSubdomain] = useState("domain");
 
   return (
     <div className="bg-white rounded-3xl p-8 md:p-10 border border-gray-200/50 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)]">
@@ -105,7 +105,7 @@ export default function RegisterForm() {
           </label>
           <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-amber-50 border border-amber-200/50">
             <span className="text-amber-700 font-medium text-sm">
-              hivefy"[domain]".com
+              hivify"[domain]".com
             </span>
             <span className="ml-auto text-green-500 text-xs font-medium">
               ✓ Ledig

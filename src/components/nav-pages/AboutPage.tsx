@@ -95,7 +95,7 @@ export default function AboutPage() {
             <div className="flex-1 w-full max-w-2xl mx-auto lg:mx-0">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/community.jpg"
+                  src="/images/community.jpg"
                   alt="En aktiv community samlas för att diskutera och planera"
                   width={1200}
                   height={800}
