@@ -14,7 +14,7 @@ export default function FeaturesPage() {
         "Tilldela flera roller till samma medlem",
         "Ändra roller när som helst",
       ],
-      image: "/training.jpg",
+      image: "/images/training.jpg",
     },
     {
       icon: "📅",
@@ -27,7 +27,7 @@ export default function FeaturesPage() {
         "Medlemmar kan anmäla närvaro",
         "Exportera till egen kalender (iCal)",
       ],
-      image: "/kalender.jpg",
+      image: "/images/kalender.jpg",
     },
     {
       icon: "📄",
@@ -40,7 +40,7 @@ export default function FeaturesPage() {
         "Sök och filtrera",
         "Versionshantering",
       ],
-      image: "/dokument.jpg",
+      image: "/images/dokument.jpg",
     },
     {
       icon: "💬",
@@ -53,14 +53,14 @@ export default function FeaturesPage() {
         "Admin kan svara direkt i systemet",
         "Historik över alla förslag",
       ],
-      image: "/suggestions.jpg",
+      image: "/images/suggestions.jpg",
     },
   ];
 
   const HeroSection = () => (
-    <section className="relative overflow-hidden py-24 md:py-32 bg-gradient-to-br from-amber-50 via-white to-amber-100">
+    <section className="relative overflow-hidden py-24 md:py-32 bg-linear-to-br from-amber-50 via-white to-amber-100">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-400/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-amber-400/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-amber-300/5 rounded-full blur-3xl" />
         <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-amber-400/10 rounded-full blur-3xl" />
       </div>
@@ -124,7 +124,7 @@ export default function FeaturesPage() {
   );
 
   const DeepDiveSection = () => (
-    <section className="py-20 bg-gradient-to-b from-white to-amber-50/30">
+    <section className="py-20 bg-linear-to-b from-white to-amber-50/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -161,7 +161,7 @@ export default function FeaturesPage() {
                 <ul className="space-y-3">
                   {feature.details.map((detail, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-amber-500 text-xs font-bold mt-0.5">
+                      <span className="shrink-0 w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-amber-500 text-xs font-bold mt-0.5">
                         ✓
                       </span>
                       <span className="text-gray-700">{detail}</span>
@@ -172,7 +172,7 @@ export default function FeaturesPage() {
 
               {/* Höger/Vänster – Bild placeholder */}
               <div className="flex-1 w-full max-w-md">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-200/30 to-amber-400/10 border border-amber-200/30 flex items-center justify-center">
+                <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl bg-linear-to-br from-amber-200/30 to-amber-400/10 border border-amber-200/30 flex items-center justify-center">
                   <span className="text-8xl opacity-20">{feature.icon}</span>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-gray-400 text-sm font-medium">
@@ -199,9 +199,9 @@ export default function FeaturesPage() {
   // KOMPONENT 4: CTA
   // ============================================================
   const CTASection = () => (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-br from-amber-50 via-white to-amber-100/70">
+    <section className="relative py-24 overflow-hidden bg-linear-to-br from-amber-50 via-white to-amber-100/70">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-400/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 150[600px] h-150 bg-amber-400/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -219,7 +219,7 @@ export default function FeaturesPage() {
               href="/register"
               className="btn btn-primary group relative overflow-hidden text-lg px-10 py-4"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-linear-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center">
                 Starta gratis provperiod
                 <svg
