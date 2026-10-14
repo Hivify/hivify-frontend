@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import InstallPwaButton from "./pwa-button/InstallPwaButton";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +15,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-sm">
-      <div className="bg-black py-2.5 text-center">
-        <div className="container mx-auto px-4">
-          <p className="text-white/90 text-sm font-medium">
-            🐝 Surra igång din community med Hivify –{" "}
-            <span className="text-amber-400 font-bold">gratis i 30 dagar!</span>
+      <div className="bg-black ">
+        <div className="container mx-auto px-4 relative">
+          <p className="text-white/90 text-sm font-medium text-center">
+            <InstallPwaButton />
           </p>
         </div>
       </div>
