@@ -16,13 +16,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-sm">
       <div className="bg-black ">
-        <div className="container mx-auto px-4 relative">
-          <p className="text-white/90 text-sm font-medium text-center">
-            <InstallPwaButton />
-          </p>
+        <div className="container mx-auto px-4 relative text-center hover:scale-101 transition-transform">
+          <InstallPwaButton />
         </div>
       </div>
-
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 shrink-0">
