@@ -80,14 +80,14 @@ export default function RegisterForm() {
         </div>
 
         {/* Separator */}
-        <div className="border-t border-gray-100 pt-5">
+        {/* <div className="border-t border-gray-100 pt-5">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
             Din förening
           </p>
-        </div>
+        </div> */}
 
         {/* Föreningens namn */}
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Föreningens namn *
           </label>
@@ -96,10 +96,10 @@ export default function RegisterForm() {
             placeholder=""
             className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
           />
-        </div>
+        </div> */}
 
         {/* Subdomain */}
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Er unika adress
           </label>
@@ -111,10 +111,10 @@ export default function RegisterForm() {
               ✓ Ledig
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Typ av förening + Antal medlemmar */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Typ av förening *
@@ -138,7 +138,7 @@ export default function RegisterForm() {
               <option>150+ medlemmar</option>
             </select>
           </div>
-        </div>
+        </div> */}
 
         {/* Villkor */}
         <label className="flex items-start gap-3 cursor-pointer">
